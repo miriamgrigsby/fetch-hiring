@@ -18,6 +18,7 @@ import { Data, FetchedData } from './Types/data.types'
 
 //Modules
 import { triggerToast } from './Modules/toast.module'
+import SkeletonTable from './Components/skeleton-table'
 
 const App: React.FC = (): JSX.Element => {
   const [data, setData] = React.useState<Data[] | null>()
@@ -49,12 +50,16 @@ const App: React.FC = (): JSX.Element => {
   return (
     <>
       <ToastContainer />
-      {data && (
-        <div className="content-wrapper">
-          <span className="data_record-count">{_.size(data)} Matching Records</span>
-          <Table data={data} />
-        </div>
-      )}
+      <div className="content-wrapper">
+        {data ? (
+          <>
+            <span className="data_record-count">{_.size(data)} Matching Records</span>
+            <Table data={data} />
+          </>
+        ) : (
+          <SkeletonTable />
+        )}
+      </div>
     </>
   )
 }

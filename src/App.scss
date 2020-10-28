@@ -7,24 +7,29 @@ $MIDNIGHT: #354052;
 body {
   display: flex;
   justify-content: center;
+  background-color: $MIDNIGHT;
 }
 
 .content-wrapper {
   display: flex;
   flex-direction: column;
-  margin-top: 25px;
+  margin-top: 30px;
   height: 100vh;
   align-items: flex-end;
 }
 
 .data_record-count {
-  color: $SLATE;
+  color: $DUSK;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   text-align: right;
   width: 200px;
   margin-bottom: 5px;
+}
+
+.ag-theme-alpine.skeleton {
+  margin-top: 30px;
 }
 
 .ag-theme-alpine {
