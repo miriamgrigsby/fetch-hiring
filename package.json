@@ -33,8 +33,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn run fmt",
-      "pre-push": "yarn run test:ci"
+      "pre-commit": "yarn run fmt"
     }
   },
   "eslintConfig": {
