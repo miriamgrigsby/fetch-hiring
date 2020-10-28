@@ -8,7 +8,7 @@ A simple visualization of data fetched via proxy from a 3rd party source which e
 
 ## Motivation
 
-I use Typescript/React/Sass/Ag Grid everyday in my current position at Seaspan, and wanted to create my own little project to highlight some of the things I have learned. Unfortunately, the environment was setup prior to my time at the company, which gave me the opportunity to learn how to set up this kind of application from scratch. I limited my time to 4 hours to see what I could could accomplish. The App is simple, yet fullfills it's purpose. Display data correctly sorted by listId then name (remove all the null/"" names), in a nice fashion. 
+I use Typescript/React/Sass/Ag Grid everyday in my current position at Seaspan, and wanted to create my own little project to highlight some of the things I have learned. Unfortunately, the environment was setup prior to my time at the company, which gave me the opportunity to learn how to set up this kind of application from scratch. I limited my time to 4 hours to see what I could could accomplish. The App is simple, yet fullfills its purpose: Display data correctly sorted by listId then name (remove all the null/"" names), in a nice fashion. 
 
 ### Tech Stack
 
