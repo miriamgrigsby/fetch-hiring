@@ -1,0 +1,83 @@
+$DAWN: #ebedf8;
+$DUSK: #dcdfee;
+$SMOKE: #f6f7fa;
+$SLATE: #979eaa;
+$MIDNIGHT: #354052;
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  height: 100vh;
+  align-items: flex-end;
+}
+
+.data_record-count {
+  color: $SLATE;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  width: 200px;
+  margin-bottom: 5px;
+}
+
+.ag-theme-alpine {
+  align-self: center;
+  width: 60vw !important;
+  height: 88vh !important;
+  cursor: pointer;
+}
+
+.ag-theme-alpine .ag-root-wrapper {
+  border: 1px solid $DUSK !important ;
+  border-radius: 3px;
+}
+
+.ag-header-viewport {
+  background: $DAWN;
+  font-size: 20px;
+}
+
+.ag-header-row {
+  height: 55px !important;
+}
+
+.ag-header-cell-text {
+  color: $MIDNIGHT;
+}
+
+.ag-header-cell {
+  border-right: 1px solid $DUSK !important;
+}
+
+.ag-row-odd {
+  &:not(.ag-row-hover) {
+    background: $SMOKE !important;
+  }
+  border: none !important;
+}
+
+.ag-row-even {
+  border: none !important;
+}
+
+.ag-theme-alpine .ag-cell {
+  border: none;
+}
+
+.ag-theme-alpine .ag-ltr .ag-cell {
+  border-right: 1px solid $DUSK !important;
+  display: flex;
+  align-items: center;
+}
+
+.ag-paging-panel {
+  color: $SLATE !important;
+  height: 32px !important;
+}
