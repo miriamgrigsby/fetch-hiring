@@ -8,7 +8,7 @@ import 'ag-grid-community/dist/styles/ag-grid.css'
 import 'ag-grid-community/dist/styles/ag-theme-alpine.css'
 
 //Types
-import { Data } from '../data.types'
+import { Data } from '../Types/data.types'
 
 interface Props extends AgGridReactProps {
   data: Data[]

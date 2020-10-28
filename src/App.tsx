@@ -14,7 +14,7 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 //Types
-import { Data, FetchedData } from './data.types'
+import { Data, FetchedData } from './Types/data.types'
 
 //Modules
 import { triggerToast } from './Modules/toast.module'
@@ -29,11 +29,11 @@ const App: React.FC = (): JSX.Element => {
     const fetch = async () => {
       try {
         const fetchedData: FetchedData = await axios.get(proxyUrl + url)
-        const newData: Data[] = fetchedData.data
+        const receivedData: Data[] = fetchedData.data
         setData(
           _.orderBy(
-            newData.filter((i: Data) => i.name),
-            ['listId', (i: Data) => parseInt(i.name!.split(' ')[1])]
+            receivedData.filter((input: Data) => input.name),
+            ['listId', (input: Data) => parseInt(input.name!.split(' ')[1])]
           )
         )
       } catch (error) {
